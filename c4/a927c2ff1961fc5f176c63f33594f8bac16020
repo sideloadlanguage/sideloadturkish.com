@@ -1,0 +1,19 @@
+docs/TURKISH-LOCALIZATION-REVIEW.md
+  s_5892f82792b358::t_c4727571908674 1-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "c4a927c2ff1961fc5f176c63f33594f8bac16020",
+  "prompts": {},
+  "sessions": {
+    "s_5892f82792b358": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "46b61914-1841-4fdb-a047-dbf4d8a9646e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Marty <saint@ghost.lt>"
+    }
+  }
+}
