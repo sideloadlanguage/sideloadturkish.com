@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sideload Spanish — Learn Spanish While You Browse</title>
-  <meta name="description" content="A browser extension that replaces English words with Spanish on every page you read. Learn by doing, not by drilling.">
-  <link rel="canonical" href="https://sideloadspanish.com">
+  <title>Sideload Turkish — Learn Turkish While You Browse</title>
+  <meta name="description" content="A browser extension that replaces English words with Turkish on every page you read. Learn by doing, not by drilling.">
+  <link rel="canonical" href="https://sideloadturkish.com">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -470,7 +470,7 @@
 
   <nav>
     <div class="container nav-inner">
-      <a href="/" class="logo">sideload<span>spanish</span></a>
+      <a href="/" class="logo">sideload<span>turkish</span></a>
       <a href="#install" class="nav-cta">Install Free</a>
     </div>
   </nav>
@@ -478,18 +478,18 @@
   <section class="hero">
     <div class="container">
       <h1>
-        Learn <span class="sl-word" data-original="Spanish" data-es="espa&ntilde;ol" data-tier="1">espa&ntilde;ol</span>
+        Learn <span class="sl-word" data-original="Turkish" data-tr="Türkçe" data-tier="1">Türkçe</span>
         while you browse
       </h1>
       <p>
         A browser extension that quietly replaces
-        <span class="sl-word" data-original="words" data-es="palabras" data-tier="1">palabras</span>
+        <span class="sl-word" data-original="words" data-tr="kelimeler" data-tier="1">kelimeler</span>
         on every page you read. No flashcards, no schedule, no
-        <span class="sl-word" data-original="effort" data-es="esfuerzo" data-tier="2">esfuerzo</span>.
+        <span class="sl-word" data-original="effort" data-tr="çaba" data-tier="2">çaba</span>.
         Just read the
-        <span class="sl-word" data-original="web" data-es="web" data-tier="1">web</span>
+        <span class="sl-word" data-original="web" data-tr="web" data-tier="1">web</span>
         and pick up
-        <span class="sl-word" data-original="Spanish" data-es="espa&ntilde;ol" data-tier="1" data-gender="m">espa&ntilde;ol</span>
+        <span class="sl-word" data-original="Turkish" data-tr="Türkçe" data-tier="1">Türkçe</span>
         along the way.
       </p>
       <div class="hero-ctas">
@@ -511,7 +511,7 @@
           <h3>Firefox</h3>
           <p>Live on Mozilla Add-ons. One-click install.</p>
           <a
-            href="https://addons.mozilla.org/en-US/firefox/addon/sideload-spanish/"
+            href="https://addons.mozilla.org/en-US/firefox/addon/sideload-turkish/"
             class="btn btn--orange"
             target="_blank"
             rel="noopener"
@@ -602,7 +602,7 @@
       <div class="waitlist-panel">
         <p>No checkout yet. Leave your email and I&rsquo;ll send updates if sync moves from idea to launch.</p>
         <form
-          action="https://buttondown.com/api/emails/embed-subscribe/sideloadspanish"
+          action="https://buttondown.com/api/emails/embed-subscribe/sideloadturkish"
           method="post"
           class="waitlist-form"
         >
@@ -658,7 +658,7 @@
       <p>
         A <a href="https://loadlang.com">LoadLang</a> product
         &middot;
-        <a href="https://github.com/meowmeowco/sideloadspanish">Source</a>
+        <a href="https://github.com/sideloadlanguage/sideloadturkish">Source</a>
         &middot;
         <a href="/privacy.html">Privacy</a>
       </p>
@@ -683,9 +683,8 @@
 
       function show(target) {
         const original = target.dataset.original;
-        const es = target.dataset.es;
+        const tr = target.dataset.tr;
         const tier = parseInt(target.dataset.tier, 10);
-        const gender = target.dataset.gender;
 
         tip.innerHTML = '';
 
@@ -696,15 +695,8 @@
 
         const transEl = document.createElement('div');
         transEl.className = 'sl-tooltip__translation';
-        transEl.textContent = '\u2192 ' + es;
+        transEl.textContent = '\u2192 ' + tr;
         tip.appendChild(transEl);
-
-        if (gender) {
-          const genderEl = document.createElement('div');
-          genderEl.className = 'sl-tooltip__gender';
-          genderEl.textContent = gender === 'f' ? '\u2640 feminine' : '\u2642 masculine';
-          tip.appendChild(genderEl);
-        }
 
         const tierEl = document.createElement('div');
         tierEl.className = 'sl-tooltip__tier';
